@@ -39,7 +39,8 @@ async function saludar() {
         alert(saludo.data);
     } catch (error) {
         console.error(error);
-        alert(error.response.data);
+        alert((error as any).response.data : "An error occurred");
+
     }
 
 }
